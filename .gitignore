@@ -1,2 +1,5 @@
 venv
 dtmoney/__pycache__
+.idea
+transaction/migrations/__pycache__/
+transaction/__pycache__/
