@@ -4,6 +4,6 @@ from .views import TransactionView, RegisterTransactionView, DeleteTransactionVi
 urlpatterns = [
     path('list/', TransactionView.as_view({'get': 'list'}), name='List transaction'),
     path('register/', RegisterTransactionView.as_view(), name="Register transaction"),
-    path('delete/<str:pk>/', DeleteTransactionView, name="Delete transaction"),
-    path('update/<str:pk>/', UpdateTransactionView, name="Update transaction"),
+    path('delete/<pk>/', DeleteTransactionView, name="Delete transaction"),
+    path('update/<pk>/', UpdateTransactionView, name="Update transaction"),
 ]
