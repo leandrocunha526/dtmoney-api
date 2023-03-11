@@ -33,3 +33,10 @@ def UpdateTransactionView(request, pk):
         serializer.save()
         return Response(serializer.data)
     return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+
+@api_view(['GET'])
+def GetByIdTransactionView(request, pk):
+    transaction = Transaction.objects.get(id=pk)
+    serializer = TransactionSerializer(transaction, many=False)
+    return Response(serializer.data)
