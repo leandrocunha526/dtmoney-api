@@ -7,7 +7,7 @@ class Transaction(models.Model):
     title = models.CharField(max_length=300)
     type = models.CharField(max_length=300)
     category = models.CharField(max_length=300)
-    amount = models.IntegerField()
+    amount = models.DecimalField(max_digits=10, decimal_places=2)
     date = models.DateTimeField()
     createdAt = models.DateTimeField(auto_now=True)
 
