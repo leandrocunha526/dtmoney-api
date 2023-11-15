@@ -82,8 +82,8 @@ WSGI_APPLICATION = "dtmoney.wsgi.application"
 DATABASES = {
     "default": {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'dtmoney',                      
-        'USER': 'dtmoney',
+        'NAME': 'dtmoney',
+        'USER': 'postgres',
         'PASSWORD': 'admin12345',
         'HOST': 'localhost',
         'PORT': '5432',
